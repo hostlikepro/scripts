@@ -38,3 +38,4 @@ else
  ufw allow 4001
  ufw allow 4002
  ufw allow 4003
+fi
