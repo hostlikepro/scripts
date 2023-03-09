@@ -10,17 +10,18 @@ else
  apt -y install curl
  apt -y install mc
  #NUMLOCK
- wget https://raw.githubusercontent.com/hostlikepro/linux-install-scripts/main/numlock
- wget https://raw.githubusercontent.com/hostlikepro/linux-install-scripts/main/numlock.service
- mv numlock /usr/local/bin/
- mv numlock.service /etc/systemd/system/
- systemctl enable numlock.service
+ apt -y install numlockx
+ #wget https://raw.githubusercontent.com/hostlikepro/linux-install-scripts/main/numlock
+ #wget https://raw.githubusercontent.com/hostlikepro/linux-install-scripts/main/numlock.service
+ #mv numlock /usr/local/bin/
+ #mv numlock.service /etc/systemd/system/
+ #systemctl enable numlock.service
  #SSH
  apt -y install openssh-server
  rm /etc/ssh/sshd_config
  wget https://raw.githubusercontent.com/hostlikepro/linux-install-scripts/main/ptero/sshd_config
  mv sshd_config /etc/ssh/
- rm authorized_keys /root/.ssh/
+ mkdir -p /root/.ssh/
  wget https://raw.githubusercontent.com/hostlikepro/linux-install-scripts/main/authorized_keys
  mv authorized_keys /root/.ssh/
  systemctl restart openssh-server
