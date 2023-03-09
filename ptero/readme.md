@@ -1,7 +1,7 @@
 ## Install
 
 ```
-wget -O - https://github.com/hostlikepro/linux-install-scripts/ptero/install.sh | bash
+wget -O - https://raw.githubusercontent.com/hostlikepro/linux-install-scripts/main/ptero/install.sh | bash
 ```
 
 ---
